@@ -17,18 +17,28 @@
   </head>
   <body>
     <main>
-      <h1>Check your BMI</h1>
-      <p>Enter your weight and height below to check your BMI results</p>
+      <div class="container">
+        <h1>Check your BMI</h1>
+        <p>Enter your weight and height below to check your BMI results</p>
 
-      <form action="">
-        <label for="weight">Put your weight in here (KG)</label>
-        <input type="number" name="weight" id="weight" placeholder="60" />
+        <form action="">
+          <label for="weight">Put your weight in here (KG)</label>
+          <input type="number" name="weight" id="weight" placeholder="60" />
 
-        <label for="height">Put your height in here (CM)</label>
-        <input type="number" name="height" id="height" placeholder="167" />
+          <label for="height">And your height in here (CM)</label>
+          <input type="number" name="height" id="height" placeholder="167" />
 
-        <input type="button" value="Calculate BMI" />
-      </form>
+          <input
+            type="button"
+            id="btn-calculate"
+            value="Calculate BMI"
+            class="bn632-hover bn25"
+          />
+          <div id="result"></div>
+        </form>
+      </div>
     </main>
+
+    <script src="script.js"></script>
   </body>
 </html>
